@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<style>
+#container {
+  width: 145px;
+  height: 100px;
+  border: 1px solid #ccc;
+  overflow-x: scroll;
+}
+
+#content {
+  width: 250px;
+  background-color: #ccc;
+}
+</style>
+<html>
+<script>
+      function animateContent() {
+
+var divWidth = $(".js-page-scroll").width();
+var divWidthLg = $(".js-page-scroll").width() - 20;
+var divWidthMd = $(".js-page-scroll").width() - 40;
+var divWidthSm = $(".js-page-scroll").width() - 100;
+     //console.log(divWidth);
+      //console.log(divWidthLg);console.log(divWidthMd);
+
+
+ var section =$("section");
+
+
+  section.each(function(){
+
+
+  var offset = $(this).offset().left;
+  var ind = $(this).index() + 1;
+
+ // console.log(ind, offset);
+
+  if(offset > divWidth) {
+      $("p" , this).addClass("animated fadeOutUp");
+
+   }
+
+  if ( (offset < divWidthLg)){
+
+  if ($("p" , this).hasClass("fadeOutUp")){
+  $("p" , this).removeClass("fadeOutUp");
+  $("p" , this).addClass("animated fadeInUp");
+  setTimeout(function(){
+  $("p" , this).removeClass("fadeInUp");
+  }, 1500);
+  }
+  else {
+  $("p" , this).addClass("animated fadeInUp");
+  }
+
+  }
+
+  if(offset < divWidthSm) {
+   // $("p" , this).removeClass("fadeOutUp");
+    // $("p" , this).removeClass("fadeInUp");
+  }
+
+  });
+
+}
+
+</script>
+
+<div id="container">
+  <div id="content">Click the buttons to slide horizontally!</div>
+</div>
+<button id="slideLeft" type="button">Slide left</button>
+<button id="slideRight" type="button">Slide right</button>
+</html>

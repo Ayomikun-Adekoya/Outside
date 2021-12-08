@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<style>
+
+    main{
+        background-color: white;
+    }
+    header{
+        top: 0;
+        background-color: black;
+    }
+    #header-img{
+        text-align: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    #container{
+        text-align: center;
+        align-items: center;
+    }
+    
+    .form-control {
+          width: 90%;
+          height: 30px;
+          border-radius: 10px;
+          margin-top: -5px;
+            }
+    .spacing{
+        margin-bottom: 50px;
+    }
+
+    .box{
+        background-color: rgb(250, 230, 220);
+        box-shadow: 0;
+        width: 40%;
+        height: auto;
+        text-align: center;
+        margin-left: 30%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .boxy{
+        background-color: rgb(250, 230, 220);
+        box-shadow: 0;
+        width: 40%;
+        height: auto;
+        text-align: center;
+        margin-left: 30%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+    
+    h2{
+        font-family: cursive;
+        text-align: left;
+        margin-left: 10px;
+    }
+    ::placeholder{
+        text-align: center;
+    }
+
+    button:hover {
+    animation-fill-mode: forwards;
+    animation-name: hover;
+    animation-duration: 1s;
+  }
+
+  @keyframes hover {
+    100% {
+      background-color: rgb(250, 230, 220);
+    }
+  }
+    button{
+        margin-top: 30px;
+        margin-left: 40%;
+        display: block;
+        width: 20%;
+        padding: 5px;
+        background-color: hsl(145, 12%, 49%);
+        text-color: hsl(236, 63%, 5%);
+        color: inherit;
+        border-radius: 10px;
+        cursor: pointer;
+        
+    }
+    h3{
+        font-size: 20px;
+        color: #112D54;
+    }
+</style>
+<html>
+    <main>
+        <header>
+            <div id="header-img">
+                <img style="height: 70px;" src="North_logo white.png" alt="The north pole avenue">
+            </div>
+        </header>
+        <body>
+            <div style="padding-top: 50px; padding-bottom: 50px;">
+                <div>
+                    <h1 style="font-weight: bold; font-family: cursive; font-size: 35px; text-align: center;">LOG IN</h1>
+                </div>
+                <div id="container" class="box"> 
+                    
+                        <div id="form">
+                            <form action="">
+                                <div class="spacing">
+                                <label id="email-label" for="Email"><h2 style="margin-top: 50px;">Email</h2></label>
+                                <input
+                                  type="email"
+                                  name="Email"
+                                  placeholder="eg joebrown123@gmail.com"
+                                  class="form-control"
+                                  required
+                                />
+                                  </div>
+    
+                                  <div class="spacing">
+                                    <label id="password-label" for="Email"><h2>Password</h2></label>
+                                    <input
+                                      type="password"
+                                      name="Password"
+                                      placeholder="password"
+                                      class="form-control"
+                                      required
+                                    />
+                                      </div>
+                                    
+                                    <div class="spacing"> 
+                                        <button id="button" type="submit">Log in</button>
+                                    </div>
+                  
+                            </form>
+                            <div>
+                                <a href="" style="text-decoration: none;"><h3>forgot password</h3></a>
+                            </div>
+                    
+                        </div>
+                    
+                </div>
+    
+            </div>
+        </body>
+        <div class="boxy" style="margin-bottom: 50px;">
+            <div>
+                <a href="file:///C:/Users/MULTIPLE%20LAPTOP/Documents/FRONT%20END/OUTSIDE/sign-up.html" style="text-decoration: none;"><h3>Don't have an account? <strong style="color: grey;">sign up</strong></h3></a>
+            </div>
+        </div>
+        </main>
+</html>

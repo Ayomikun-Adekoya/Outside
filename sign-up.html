@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<style>
+
+    main{
+        background-color: white;
+    }
+    header{
+        top: 0;
+        background-color: black;
+    }
+    #header-img{
+        text-align: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    #container{
+        text-align: center;
+        align-items: center;
+    }
+    
+    .form-control {
+          width: 85%;
+          height: 30px;
+          border-radius: 10px;
+          margin-top: -5px;
+            }
+
+            .input-radio,
+        .input-checkbox {
+          display: inline-block;
+          margin-right: 0.625rem;
+          min-height: 1.25rem;
+          min-width: 1.25rem;
+        }
+
+
+    .spacing{
+        margin-bottom: 50px;
+    }
+
+    .box{
+        background-color: rgb(250, 230, 220);
+        box-shadow: 0;
+        width: 50%;
+        height: auto;
+        text-align: center;
+        margin-left: 25%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .boxy{
+        background-color: rgb(250, 230, 220);
+        box-shadow: 0;
+        width: 40%;
+        height: auto;
+        text-align: center;
+        margin-left: 30%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+    
+    h2{
+        font-family: cursive;
+        text-align: left;
+        margin-left: 10px;
+    }
+    ::placeholder{
+        text-align: center;
+    }
+
+    button:hover {
+    animation-fill-mode: forwards;
+    animation-name: hover;
+    animation-duration: 1s;
+  }
+
+  @keyframes hover {
+    100% {
+      background-color: rgb(250, 230, 220);
+    }
+  }
+    button{
+        margin-top: 30px;
+        margin-left: 40%;
+        display: block;
+        width: 20%;
+        padding: 5px;
+        background-color: hsl(145, 12%, 49%);
+        text-color: hsl(236, 63%, 5%);
+        color: inherit;
+        border-radius: 10px;
+        cursor: pointer;
+        
+    }
+    h3{
+        font-size: 20px;
+        color: #112D54;
+    }
+</style>
+<html>
+    <main>
+        <header>
+            <div id="header-img">
+                <img style="height: 70px;" src="https://i.ibb.co/Lx2DRt9/DDC929-C2-C817-45-A2-941-D-D3-D4000-F0-B7-E-t.png" alt="Outside">
+            </div>
+        </header>
+        <body>
+            <div style="padding-top: 50px; padding-bottom: 50px;">
+                <div>
+                    <h1 style="font-weight: bold; font-family: cursive; font-size: 35px; text-align: center;">Sign up</h1>
+                </div>
+                <div id="container" class="box"> 
+                    
+                        <div id="form">
+                            <form action="">
+                                <div class="spacing">
+                                    <label id="Fname-label" for="name"><h2 style="margin-top: 50px;">First Name</h2></label>
+                                    <input
+                                      type="text"
+                                      name="name"
+                                      placeholder="First Name "
+                                      class="form-control"
+                                      required
+                                    />
+                                      </div>
+
+                                      <div class="spacing">
+                                        <label id="Lname-label" for="name"><h2>Last Name</h2></label>
+                                        <input
+                                          type="text"
+                                          name="name"
+                                          placeholder="Last Name "
+                                          class="form-control"
+                                          required
+                                        />
+                                          </div>
+                                          
+                                          <div>
+                                            <h2>Gender</h2>
+                                            <label>
+                                      <div style="text-align: left; margin-left: 60px;">
+                                        <input
+                                        name="gender"
+                                        value="male"
+                                        type="radio"
+                                        class="input-radio"
+                                      />Male</label
+                                    >
+                                    <label>
+                                      <input
+                                        name="gender"
+                                        value="female"
+                                        type="radio"
+                                        class="input-radio"
+                                      />Female</label
+                                    >
+                                      </div>
+                                        </div>
+                                        
+    
+                                <div class="spacing">
+                                <label id="email-label" for="Email"><h2>Email</h2></label>
+                                <input
+                                  type="email"
+                                  name="Email"
+                                  placeholder="eg joebrown123@gmail.com"
+                                  class="form-control"
+                                  required
+                                />
+                                  </div>
+    
+                                  <div class="spacing">
+                                    <label id="password-label" for="Email"><h2>Password</h2></label>
+                                    <input
+                                      type="password"
+                                      name="Password"
+                                      placeholder="password"
+                                      class="form-control"
+                                      required
+                                    />
+                                      </div>
+
+                                      <div>
+                                    <label id="number-label" for="phone-number"><h2>Phone Number</h2></label>
+                                      <input
+                                        type="number"
+                                        name="phone-number"
+                                        id="number"
+                                        min="07000000000"
+                                        max="2349099999999"
+                                        placeholder="+234 8034777707"
+                                        class="form-control" 
+                                        required
+                                      />
+                                        </div>
+
+
+                                    <div class="spacing"> 
+                                        <button id="button" type="submit">Sign up</button>
+                                    </div>
+                  
+                            </form>
+                    
+                </div>
+    
+            </div>
+        </body>
+        <div class="boxy" style="margin-bottom: 50px; margin-top: 70px;" >
+            <div>
+                <a href="file:///C:/Users/MULTIPLE%20LAPTOP/Documents/FRONT%20END/OUTSIDE/log-in.html" style="text-decoration: none;"><h3>already have an account? <strong style="color: grey;">Log in</strong></h3></a>
+            </div>
+        </div>
+        </main>
+</html>

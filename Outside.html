@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<style>
+    main{
+        background-color: black;
+    }
+
+    .nav-text{
+        text-decoration: none;
+        font-size: 18px;
+        color: antiquewhite;
+        margin-left: 40px;
+        margin-right: 40px;
+        font-family: cursive;
+    }
+
+#nav-bar{
+        position: fixed;
+        top: 0;
+        display: flex;
+        padding: 20px;
+        border-bottom-style: solid;
+        border-color: whitesmoke;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        width: 96%;
+        height: 10%;
+        background-color: black;
+        margin-top: -10px;
+    }
+
+#nav-link{
+    margin-left: 320px;
+    margin-bottom: -50px;
+}
+
+input[type=text] {  
+padding: 6px;  
+margin-top: 8px;  
+font-size: 17px;  
+border: none;  
+    } 
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.center{
+    text-align: center;
+    align-items: center;
+}
+
+.search-bar{
+    background-color: black;
+    border-color: white;
+    border: 2px;
+    color: antiquewhite;
+    width: 150%;
+    align-items: baseline;  
+    margin-left: 50%;
+
+}
+
+::placeholder{
+    text-align: center;
+}
+
+#Home{
+    padding-top: 110px;
+    padding-bottom: 30px;
+}
+
+.icon-img{
+    width: 300px;
+    height: 90px;
+    margin-left: -20px;
+    margin-bottom: -10px;
+    
+}
+
+img{
+        margin:10px;
+        width: 180px;
+        height: 150px;
+    }
+
+.box{
+        background-color: #7fa88d;
+        box-shadow: 0;
+        margin: 10px;
+        width: 170px;
+        height: 150px;
+        text-align: center;
+}
+
+.event_display{
+    display: flex;
+    border-style: solid ;
+    border-color: red;
+    margin-left: 20px;
+    margin-right: 20px; 
+    margin-bottom: 70px;
+    padding-left: 10px;
+    overflow: auto; 
+    white-space: nowrap; 
+    -webkit-overflow-scrolling: touch;
+}
+
+h2{
+    color: antiquewhite;
+    font-family: cursive;
+    margin-left: 20px;
+
+}
+
+#display_img{
+    width: 95%;
+    height: 350px;
+    margin-left: 20px;
+}
+
+.display_buttons{
+    background-color: red;
+    width: auto;
+    height: 30px;
+    border-color: red;
+    margin-left: 30px;
+    color: antiquewhite;
+    font-family: cursive;
+}
+
+#search-bar{
+    padding-top: 35px;
+}
+
+</style>
+
+<html>
+    <main>
+        <div id="nav-bar">
+            <nav class="flex">
+                <div>
+                    <img class="icon-img" src="https://i.ibb.co/Lx2DRt9/DDC929-C2-C817-45-A2-941-D-D3-D4000-F0-B7-E-t.png" alt="Outside">
+                </div>
+                <div>
+                    <form>   
+                        <div id="search-bar">
+                            <input type="text" class="search-bar" placeholder=" Search for events around me ?" name="search">   
+                        </div>
+                        </form>  
+                </div>
+                <div id="nav-link"> 
+                    <a class="nav-text" href="#Home">HOME</a>
+                    <a class="nav-text" href="#Events" >EVENTS</a>
+                    <a class="nav-text" style="padding-right:30px ;" href="#Cart">CART</a>
+                </div>
+            </nav>
+        </div>
+        <section id="Home">
+
+
+            <div>
+                <div>
+                    <img id="display_img" class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">
+                </div>
+                <div>
+                    <h2 style="margin-left: 20px; font-weight: lighter;">EVENTS IN LASGIDI</h2>
+                </div>
+                <div>
+                    <form>
+                        <a href=""><button style="margin-left: 20px;" class="display_buttons">ALL</button></a>
+                        <a href=""><button class="display_buttons">HOUSE PARTIES</button></a>
+                        <a href=""><button class="display_buttons">PARTIES</button></a>
+                        <a href=""><button class="display_buttons">LISTENING PARTIES</button></a>
+                        <a href=""><button class="display_buttons">FREE EVENTS</button></a>
+                        <a href=""><button class="display_buttons">MORE</button></a>
+    
+                    </form>
+                </div>
+            </div>
+            
+            <div>
+                <div style="margin-top: 50px;">
+                    <h2>HAPPENING LIVE</h2>
+                </div>
+                <div class="event_display">
+                    <div>
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div>
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+                       
+                </div>
+    
+            </div>
+
+            <div>
+                <div>
+                    <h2>THIS FRIDAY</h2>
+                </div>
+                <div class="event_display">
+                    <div>
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div>
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+                       
+                </div>
+    
+            </div>
+
+            <div>
+                <div>
+                    <h2>TOP TRENDING</h2>
+                </div>
+                <div class="event_display">
+                    <div>
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div>
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+    
+                    <div >
+                        <img class="box" src="https://2.bp.blogspot.com/-meCyQMI0q80/UL4xNyg60pI/AAAAAAAAAEA/92U1x9nfWOw/s1600/SUMMER+RUSH.png" alt="BC">                
+                    </div>
+                       
+                </div>
+    
+            </div>
+        </section>
+    </main>
+</html>
